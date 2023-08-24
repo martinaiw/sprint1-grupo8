@@ -1,0 +1,19 @@
+
+/* header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+} */
+
+.titulo {
+    font-family: 'Cormorant SC', serif;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    width: 40px;
+    height: 108px;
+    flex-direction: column;
+    flex-shrink: 0;
+}

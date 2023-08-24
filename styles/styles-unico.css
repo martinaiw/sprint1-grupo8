@@ -1,0 +1,37 @@
+/* estilo de footer NO TOCAR 
+ Opcional agregar clases o id (ejemplo: #wppfooter)*/
+body {
+    margin: 0px;
+}
+
+footer .footer-icons img {
+    width: 25px;
+    margin: 0 auto;
+    /* margin-bottom: 35px; */
+    align-items: center;
+    justify-content: center;
+   
+}
+/* para comentar ctrl + K C, descomentar ctrl + K U */
+footer  {
+    background-color: #D9D9D9;
+    background-size: contain;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column;  */
+    display: flex; justify-content: space-between;
+   
+}
+
+.footer-list li {
+    display: inline;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer-icons {
+     margin-right: 20px;
+}
