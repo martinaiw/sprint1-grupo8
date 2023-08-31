@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamos</title>
+    <link rel="stylesheet" href="prestamo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <section class="logo">
+                <p>BANCO <br> BARRO</p>
+                <img src="Unknown.png" alt="">
+            </section>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Calcular préstamos</h1>
+            <label>Ingresa el monto del préstamo:</label>
+            <input type="number" id="monto" />
+            <br>
+            <label>Selecciona el plazo en meses:</label>
+            <select id="cuotas">
+                <option value="12">12 meses</option>
+                <option value="18">18 meses</option>
+                <option value="24">24 meses</option>
+            </select>
+            <br>
+            <button onclick="calcular()">Calcular</button>
+            <p id="resultado"></p>
+            </div>
+        </div>
+        <script>
+            function calcular() {
+                let tasaDeInteres = 1.18;
+                let montoFinal = parseFloat(document.getElementById("monto").value);
+                let plazoFinal = parseInt(document.getElementById("cuotas").value);
+                let interesMensual = montoFinal * tasaDeInteres;
+                let totalAPagar = montoFinal + interesMensual * plazoFinal;
+                document.getElementById("resultado").textContent = "Total a pagar en " + plazoFinal +" meses: $" + totalAPagar.toFixed(2);
+            }
+        </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de moneda</title>
+    <link rel="stylesheet" href="prestamo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <head>
+        <nav class="navbar">
+            <section class="logo">
+                <p>BANCO <br> BARRO</p>
+                <img src="Unknown.png" alt="">
+            </section>
+        </nav>
+        <main>
+            <div class="container">
+                <h1 class="textoPesoDolar">Convertidor de Moneda:</h1>
+                <h2>Peso argentino/Euro</h2>
+                <label>Ingresa la cantidad:</label>
+                <input type="number" id="cantidadEuro"/>
+                <label>Selecciona la moneda:</label>
+                <select id="monedaEuro">
+                <option value="pesoArgEuro">PESO ARG</option>
+                <option value="euro">EURO</option>
+                </select>
+                <button onclick="convertirEuro()">Convertir</button>
+                <p id="resultadoEuro"></p>
+            </div>
+        </main>
+        <footer><a href="convertidorfinal1.html">Convertír peso argentino/dólar.</a></footer>
+        <script>
+            function convertirEuro() {
+                let porcentajePesoAEuro = 0.0026;
+                let porcentajeEuroAPeso = 378.32;
+                let cantidadEuro = parseFloat(document.getElementById("cantidadEuro").value);
+                let monedaEuro = document.getElementById("monedaEuro").value;
+                let resultadoEuro = 0;
+                if (monedaEuro === "pesoArgEuro"){
+                    resultadoEuro = cantidadEuro * porcentajePesoAEuro;
+                    document.getElementById("resultadoEuro").textContent = cantidadEuro +" Pesos argentinos son " + resultadoEuro.toFixed(2) + " Euros.";
+                } else if (monedaEuro === "euro"){
+                    resultadoEuro = cantidadEuro * porcentajeEuroAPeso;
+                    document.getElementById("resultadoEuro").textContent = cantidadEuro +" Euros son " + resultadoEuro.toFixed(2) + " Pesos argentinos.";
+                }
+            }
+        </script>
+</body>
+</html>
