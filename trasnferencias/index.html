@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Transferencias Bancarias</h1>
+    </header>
+    <main>
+        <div class="transfer-form" id="transfer-form">
+            <h2>Realizar Transferencia</h2>
+            <form id="transfer-form">
+                <label for="from">Desde:</label>
+                <input type="text" id="from" name="from" placeholder="Cuenta de origen">
+
+                <label for="to">Hacia:</label>
+                <input type="text" id="to" name="to" placeholder="Cuenta de destino">
+
+                <label for="amount">Monto:</label>
+                <div class="input-container">
+                    <span>$</span>
+                    <input type="text" id="amount" name="amount" placeholder="Monto a transferir">
+                </div>
+
+                <button type="submit">Realizar Transferencia</button>
+            </form>
+        </div>
+        <div class="transfer-history">
+            <h2>Historial de Transferencias</h2>
+            <ul id="history-list">
+                <!-- Los elementos de historial se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+        <div class="transfer-details" id="transfer-details">
+            <!-- Aquí se mostrarán los detalles de la transferencia seleccionada -->
+        </div>
+        <div class="account-summary">
+            <h2>Resumen de Cuenta</h2>
+            <p><strong>Nombre:</strong> <span id="account-name">guille illanes</span></p>
+            <p><strong>Saldo:</strong> $<span id="account-balance">1000</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Barro Bank</p>
+    </footer>
+</body>
+</html>

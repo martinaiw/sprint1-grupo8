@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #DFD7BF;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Estilos para el formulario de transferencias */
+.transfer-form {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #F7F5EF;
+    margin-bottom: 2rem;
+}
+
+.transfer-form h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.transfer-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.transfer-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.transfer-form .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+
+.transfer-form .input-container span {
+    padding: 0.5rem;
+}
+
+.transfer-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.transfer-form button:hover {
+    background-color: #222;
+}
+
+/* Estilos para el historial de transferencias */
+.transfer-history {
+    margin-top: 2rem;
+}
+
+.transfer-history h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.transfer-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transfer-history li {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transfer-history li .details-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.transfer-history li .details-btn:hover {
+    background-color: #222;
+}
+
+/* Estilos para los detalles de transferencia */
+.transfer-details {
+    display: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.transfer-details h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el resumen de cuenta */
+.account-summary {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #F7F5EF;
+    margin-top: 2rem;
+}
+
+.account-summary h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.account-summary p {
+    color: #555;
+}
+
+.account-summary p strong {
+    color: #333;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #DFD7BF;
+}
+
+footer p {
+    color: #333;
+}
